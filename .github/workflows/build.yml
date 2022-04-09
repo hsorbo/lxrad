@@ -6,7 +6,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Install deps
-        run: sudo apt-get install automake
+        run: sudo apt-get install automake autoconf
       - name: Build
         run: |
           ./make_deps.sh
