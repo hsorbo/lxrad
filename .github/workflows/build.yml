@@ -7,7 +7,4 @@ jobs:
       - uses: actions/checkout@v2
       - name: Build
       - run: ./make_deps.sh
-      - run: autoconf
-      - run: ./configure
-      - run: make
 
