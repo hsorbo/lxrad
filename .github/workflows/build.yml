@@ -8,4 +8,7 @@ jobs:
       - name: Build
         run: |
           ./make_deps.sh
+          autoconf
+          ./configure
+          make
 
