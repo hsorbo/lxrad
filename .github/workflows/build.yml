@@ -6,5 +6,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Build
-        run: ./make_deps.sh
+        run: |
+          ./make_deps.sh
 
