@@ -1,0 +1,13 @@
+name: Build lxrad
+on: [push]
+jobs:
+  build-linux:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Build
+        run: ./make_deps.sh
+        run: autoconf
+        run: ./configure
+        run: make
+
